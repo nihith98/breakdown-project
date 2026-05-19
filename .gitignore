@@ -1,0 +1,43 @@
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Build
+target/
+dist/
+build/
+*.class
+*.jar
+*.war
+
+# Dependencies
+node_modules/
+.gradle/
+.m2/
+vendor/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# Package managers
+package-lock.json
+yarn.lock
