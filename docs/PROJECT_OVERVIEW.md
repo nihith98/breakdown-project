@@ -123,8 +123,8 @@ Unlike competitors, breakDown:
 │                                                         │
 │  Frontend (Web/PWA/iOS/Android)                        │
 │  ├─ Web/PWA: Framework TBD + TypeScript + Glasmorphism  │
-│  ├─ iOS: SwiftUI with safe areas + Keychain          │
-│  └─ Android: Jetpack Compose + Material Design        │
+│  ├─ iOS: Native framework TBD + secure token storage   │
+│  └─ Android: Native framework TBD + secure token store │
 │                                                         │
 └───────────────────────┬─────────────────────────────────┘
                         │ HTTPS (TLS 1.3+)
@@ -307,17 +307,17 @@ authentication-svc (WAR, deployed to WildFly 35)
 - **Build**: TBD
 
 ### Mobile (iOS)
-- **Language**: Swift
-- **Framework**: SwiftUI
-- **Networking**: URLSession
-- **Local Storage**: Keychain (for refresh tokens)
+- **Language**: TBD (e.g., Swift, or other)
+- **Framework**: TBD (native framework with safe area support)
+- **Networking**: TBD
+- **Local Storage**: TBD (must support secure token storage)
 - **Deployment**: TestFlight → App Store
 
 ### Mobile (Android)
-- **Language**: Kotlin
-- **Framework**: Jetpack Compose
-- **Networking**: Retrofit / OkHttp
-- **Local Storage**: EncryptedSharedPreferences
+- **Language**: TBD (e.g., Kotlin, or other)
+- **Framework**: TBD (native framework with Material Design)
+- **Networking**: TBD
+- **Local Storage**: TBD (must support secure token storage)
 - **Deployment**: Google Play Console
 
 ### Infrastructure
