@@ -122,7 +122,7 @@ Unlike competitors, breakDown:
 ┌─────────────────────────────────────────────────────────┐
 │                                                         │
 │  Frontend (Web/PWA/iOS/Android)                        │
-│  ├─ Web/PWA: React/Vue + TypeScript + Glassmorphism  │
+│  ├─ Web/PWA: Framework TBD + TypeScript + Glasmorphism  │
 │  ├─ iOS: SwiftUI with safe areas + Keychain          │
 │  └─ Android: Jetpack Compose + Material Design        │
 │                                                         │
@@ -300,11 +300,11 @@ authentication-svc (WAR, deployed to WildFly 35)
 - **Testing**: JUnit 5, Mockito, TestContainers
 
 ### Frontend (Web/PWA)
-- **Framework**: React 18+ or Vue 3+ (TBD)
+- **Framework**: TBD (e.g., React, Vue, Svelte, or other)
 - **Language**: TypeScript 5+
-- **Styling**: Tailwind CSS / CSS-in-JS with glassmorphism
-- **State Management**: Redux, Zustand, or Composition API
-- **Build**: Vite, Webpack, or esbuild
+- **Styling**: Framework-appropriate styling solution with glassmorphism (must support dark/light themes)
+- **State Management**: TBD
+- **Build**: TBD
 
 ### Mobile (iOS)
 - **Language**: Swift
