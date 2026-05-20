@@ -15,7 +15,7 @@ Unlike competitors, breakDown:
 - **Settles families together** — family units settle as one collective entity, reducing transaction overhead
 - **Optimizes settlements mathematically** — computes the fewest transactions needed to clear all debts
 - **Handles recurring expenses** — subscriptions and monthly bills defined once, factored into settlements automatically
-- **Works everywhere** — consistent experience across web, PWA, iOS, and Android
+- **API-first design** — REST endpoints designed for web, PWA, iOS, and Android clients
 
 ---
 
@@ -63,18 +63,6 @@ Unlike competitors, breakDown:
 - [ ] Settlement calculation algorithm (optimal transaction graph)
 - [ ] Token generation and validation (RS256 JWT, refresh token rotation)
 
-**Frontend (Web & PWA)**
-- [ ] Login page implementation (responsive, dark/light themes)
-- [ ] Group management UI (create, add members, view details)
-- [ ] Transaction entry form (fast input, offline support)
-- [ ] Settlement visualization (who owes whom, transaction list)
-- [ ] Settings and account management
-
-**Mobile Apps**
-- [ ] iOS native app (SwiftUI, Keychain token storage)
-- [ ] Android native app (Jetpack Compose, EncryptedSharedPreferences)
-- [ ] Cross-platform design consistency (same UX language, native gestures)
-
 **Testing & Validation**
 - [ ] Unit tests for services and DAOs (JUnit5, Mockito)
 - [ ] Integration tests with MongoDB
@@ -93,8 +81,11 @@ Unlike competitors, breakDown:
 - [ ] Family hierarchy and role-based permissions
 - [ ] Expense splitting by custom percentages (not just equal)
 
-**Platform Expansion**
-- [ ] Cross-platform sync (web → mobile → web, real-time)
+**Frontend & Platform**
+- [ ] Web/PWA frontend (responsive UI, dark/light themes, glassmorphism)
+- [ ] iOS native app (SwiftUI, Keychain token storage)
+- [ ] Android native app (Jetpack Compose, EncryptedSharedPreferences)
+- [ ] Cross-platform sync (real-time)
 - [ ] Offline transaction queue (works without connectivity)
 - [ ] Export/backup functionality (user data portability)
 - [ ] Audit logging and compliance (GDPR, privacy)
@@ -119,16 +110,7 @@ Unlike competitors, breakDown:
 ### System Design
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│  Frontend (Web/PWA/iOS/Android)                        │
-│  ├─ Web/PWA: Framework TBD + TypeScript + Glasmorphism  │
-│  ├─ iOS: Native framework TBD + secure token storage   │
-│  └─ Android: Native framework TBD + secure token store │
-│                                                         │
-└───────────────────────┬─────────────────────────────────┘
-                        │ HTTPS (TLS 1.3+)
-┌───────────────────────▼─────────────────────────────────┐
+┌───────────────────────────────────────────────────────────┐
 │                                                         │
 │  API Gateway / Load Balancer                           │
 │  ├─ Token validation (JWKS endpoint)                   │
@@ -218,9 +200,6 @@ authentication-svc (WAR, deployed to WildFly 35)
 | **[authentication-svc](https://github.com/YOUR-ORG/authentication-svc)** | Authentication REST entry point | Pending |
 | **[authentication](https://github.com/YOUR-ORG/authentication)** | IAM service layer | Pending |
 | **[iam-operations](https://github.com/YOUR-ORG/iam-operations)** | IAM infrastructure & DAOs | Pending |
-| **[breakdown-web](https://github.com/YOUR-ORG/breakdown-web)** | Web/PWA frontend | Pending |
-| **[breakdown-ios](https://github.com/YOUR-ORG/breakdown-ios)** | iOS native app | Pending |
-| **[breakdown-android](https://github.com/YOUR-ORG/breakdown-android)** | Android native app | Pending |
 
 *Note: Replace `YOUR-ORG` with your actual GitHub organization.*
 
@@ -272,18 +251,17 @@ authentication-svc (WAR, deployed to WildFly 35)
 - **Outcome**: Complete blueprint for development
 
 ### Phase 2: Implementation 🔄
-- [ ] Backend services implemented (80% estimated)
-- [ ] Web frontend developed (0% — pending)
-- [ ] Mobile frontends developed (0% — pending)
-- [ ] Integration and end-to-end testing (0% — pending)
+- [ ] Backend services implemented
+- [ ] Integration and end-to-end testing
 - **Timeline**: June — September 2026 (estimated)
 - **Success Criteria**: All user stories passing acceptance tests, 80%+ code coverage
 
-### Phase 3: Launch & Growth 🚀
+### Phase 3: Frontend & Launch 🚀
+- [ ] Web/PWA frontend implementation
+- [ ] iOS and Android native apps
 - [ ] Production deployment to cloud
 - [ ] Mobile app store distribution
 - [ ] User onboarding and analytics
-- [ ] Community and feedback loops
 - **Timeline**: October 2026 onwards
 - **Vision**: 10,000+ active users tracking 1M+ transactions
 
@@ -298,27 +276,6 @@ authentication-svc (WAR, deployed to WildFly 35)
 - **Build**: Maven 3.8+
 - **Deployment**: WildFly 35 (WAR format)
 - **Testing**: JUnit 5, Mockito, TestContainers
-
-### Frontend (Web/PWA)
-- **Framework**: TBD (e.g., React, Vue, Svelte, or other)
-- **Language**: TypeScript 5+
-- **Styling**: Framework-appropriate styling solution with glassmorphism (must support dark/light themes)
-- **State Management**: TBD
-- **Build**: TBD
-
-### Mobile (iOS)
-- **Language**: TBD (e.g., Swift, or other)
-- **Framework**: TBD (native framework with safe area support)
-- **Networking**: TBD
-- **Local Storage**: TBD (must support secure token storage)
-- **Deployment**: TestFlight → App Store
-
-### Mobile (Android)
-- **Language**: TBD (e.g., Kotlin, or other)
-- **Framework**: TBD (native framework with Material Design)
-- **Networking**: TBD
-- **Local Storage**: TBD (must support secure token storage)
-- **Deployment**: Google Play Console
 
 ### Infrastructure
 - **Database**: MongoDB 6.0+ (Atlas or self-hosted)
@@ -387,11 +344,11 @@ This project is licensed under the MIT License. See `LICENSE` file for details.
 - REST API design and contract-driven development
 - Database schema design and query optimization
 
-✨ **Frontend Design & UX**
-- Responsive design (web, PWA, iOS, Android)
+✨ **Design System & UX Specification**
 - Accessibility-first approach (WCAG AA compliance)
-- Dark/light theme support and design system documentation
-- Glassmorphism and modern visual design
+- Dark/light theme design system with complete color, typography, and spacing specifications
+- Glassmorphism visual language and component library defined
+- UX specifications for multi-platform (web, iOS, Android) authored and ready for implementation
 
 ✨ **Backend Engineering**
 - Java/Spring Boot microservices

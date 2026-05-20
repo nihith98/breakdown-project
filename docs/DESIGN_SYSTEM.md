@@ -63,4 +63,4 @@ Visual language and component specifications for breakDown.
 
 ---
 
-See **[frontend-implementation-guide.md](../branding/frontend-implementation-guide.md)** for complete design specifications.
+This document covers the core design tokens. Full component and platform-specific specifications are defined in the main project's `branding/frontend-implementation-guide.md`.

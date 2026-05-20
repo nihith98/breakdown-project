@@ -198,7 +198,7 @@
 | **Design System** | Full documentation | ✅ Complete |
 | **Coding Conventions** | Clear patterns | ✅ Documented |
 | **Accessibility** | WCAG AA | ✅ Specified |
-| **Multi-platform Support** | 4 platforms + 2 themes | ✅ Designed |
+| **Multi-platform Design** | Specs for web + 2 themes | ✅ Specified |
 
 ---
 
@@ -208,7 +208,7 @@
 ✅ **Zero Technical Debt Starting Point**: Conventions established before code written  
 ✅ **Reusable Design Patterns**: UX-to-spec skill can generate specs for remaining 9 features  
 ✅ **Privacy & Accessibility First**: Both designed into system from day 1  
-✅ **Multi-platform Ready**: Web, PWA, iOS, Android support planned throughout  
+✅ **Multi-platform Spec**: Design system and UX specs authored for web, PWA, iOS, Android (implementation in Phase 3)  
 ✅ **Professional Documentation**: Comprehensive guides for onboarding developers  
 
 ---
@@ -227,14 +227,12 @@ All deliverables meet or exceed requirements. Phase 2 (Implementation) can begin
 ## 📈 Next Steps (Phase 2)
 
 - [ ] Backend service implementation (Expense + Auth systems)
-- [ ] Web/PWA frontend development
-- [ ] iOS native app development
-- [ ] Android native app development
 - [ ] Integration testing
 - [ ] Performance optimization
 - [ ] Production deployment
+- [ ] Frontend development (Web/PWA, iOS, Android) — Phase 3
 
-**Estimated Timeline**: June — September 2026
+**Estimated Timeline**: June — September 2026 (backend); October 2026+ (frontend & launch)
 
 ---
 

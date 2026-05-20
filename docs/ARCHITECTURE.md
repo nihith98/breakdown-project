@@ -6,11 +6,6 @@ High-level system design for the breakDown platform.
 
 ```
 ┌──────────────────────────────────────────────┐
-│  Frontend: Web/PWA, iOS, Android             │
-│  (Glasmorphic UI, Dark/Light Themes)         │
-└────────────────┬─────────────────────────────┘
-                 │ HTTPS/TLS 1.3+
-┌────────────────▼─────────────────────────────┐
 │  API Gateway (Token validation, Rate limits) │
 └──────────┬──────────────────┬────────────────┘
            │                  │

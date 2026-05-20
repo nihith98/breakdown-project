@@ -14,7 +14,7 @@
 - **👨‍👩‍👧‍👦 Family Settlements** — Families settle as one unit, reducing transaction complexity  
 - **📐 Optimal Settlements** — Mathematical algorithm computes the fewest transactions needed
 - **🔄 Recurring Expenses** — Subscriptions and monthly bills defined once, auto-calculated
-- **📱 Works Everywhere** — Consistent UX across web, PWA, iOS, and Android
+- **📱 API-First Design** — REST API designed for web, PWA, iOS, and Android clients
 - **🏗️ Built on Clean Architecture** — No code generation, explicit DI, native database drivers
 
 ---
@@ -24,8 +24,8 @@
 | Phase | Status | Timeline | Deliverables |
 |-------|--------|----------|--------------|
 | **1: Architecture & Design** | ✅ Complete | Apr — May 2026 | Architecture docs, User stories (10), UX specs, Design system |
-| **2: Implementation** | 🔄 In Progress | Jun — Sep 2026 | Backend services, Web/PWA, Mobile apps, Testing |
-| **3: Launch & Growth** | 🚀 Planned | Oct 2026+ | Production deployment, App store distribution |
+| **2: Implementation** | 🔄 In Progress | Jun — Sep 2026 | Backend services, Testing |
+| **3: Frontend & Launch** | 🚀 Planned | Oct 2026+ | Web/PWA, iOS, Android, Production deployment |
 
 ---
 
@@ -56,7 +56,7 @@
 ## 💡 Demonstrates
 
 ✨ Full-stack system design (architecture, APIs, databases)  
-✨ Frontend design & UX (responsive, accessibility, design systems)  
+✨ Design system & UX specification (accessibility, glassmorphism, multi-platform specs)  
 ✨ Backend engineering (Java/Spring, clean architecture)  
 ✨ Software craftsmanship (documentation, conventions, patterns)  
 

@@ -27,21 +27,6 @@ How to navigate this project documentation.
 
 ---
 
-### 🎨 Frontend / Mobile Developers
-**Start here** to understand design requirements:
-1. Review **[DESIGN_SYSTEM.md](./DESIGN_SYSTEM.md)** — Colors, typography, components
-2. Read **[branding/frontend-implementation-guide.md](../branding/frontend-implementation-guide.md)** — Complete specs
-3. Check **[REPOSITORIES.md](./REPOSITORIES.md)** for frontend repos
-4. Reference **[PROJECT_OVERVIEW.md](./PROJECT_OVERVIEW.md)** for platform requirements
-
-**Key Files**: 
-- Colors, typography, spacing specs
-- Component state tables (buttons, inputs, cards)
-- Responsive breakpoints
-- Accessibility requirements
-
----
-
 ### 📊 Product Managers / Stakeholders
 **Start here** for product vision:
 1. Read **[branding/branding-philosophy.md](../branding/branding-philosophy.md)** — User archetypes, feature philosophy
@@ -65,8 +50,7 @@ How to navigate this project documentation.
 - **CODING_CONVENTIONS.md** — Java/Spring patterns
 
 ### 🎨 Design
-- **DESIGN_SYSTEM.md** — Colors, typography, spacing
-- **branding/frontend-implementation-guide.md** — Complete design specs
+- **DESIGN_SYSTEM.md** — Colors, typography, spacing (design specification)
 - **branding/branding-philosophy.md** — Brand values and principles
 
 ### ✅ Status
@@ -87,7 +71,7 @@ How to navigate this project documentation.
 | "What's completed?" | COMPLETED_WORK.md |
 | "How do I set up?" | REPOSITORIES.md (build order) + individual repo READMEs |
 | "What are the coding patterns?" | CODING_CONVENTIONS.md or CLAUDE.md |
-| "What does it look like?" | DESIGN_SYSTEM.md + frontend-implementation-guide.md |
+| "What does it look like?" | DESIGN_SYSTEM.md + branding-philosophy.md |
 | "What's the architecture?" | ARCHITECTURE.md |
 | "Which GitHub repos?" | REPOSITORIES.md |
 | "What's the timeline?" | PROJECT_OVERVIEW.md → Project Status section |
@@ -104,10 +88,9 @@ How to navigate this project documentation.
 | COMPLETED_WORK.md | 10 min | Stakeholders, managers |
 | ARCHITECTURE.md | 5 min | Engineers |
 | CODING_CONVENTIONS.md | 10 min | Backend engineers |
-| DESIGN_SYSTEM.md | 5 min | Frontend/mobile engineers |
+| DESIGN_SYSTEM.md | 5 min | Designers, future frontend engineers |
 | REPOSITORIES.md | 5 min | Engineers setting up |
 | branding-philosophy.md | 10 min | Product, design |
-| frontend-implementation-guide.md | 20 min | Frontend/mobile engineers |
 
 ---
 
@@ -116,7 +99,7 @@ How to navigate this project documentation.
 - **"I'm not sure where to start"** → Read README.md, then pick your audience section above
 - **"I need to set up the backend"** → Go to REPOSITORIES.md and follow build order
 - **"I need to implement a feature"** → Read ARCHITECTURE.md, then CODING_CONVENTIONS.md
-- **"I need design specs"** → Read DESIGN_SYSTEM.md and frontend-implementation-guide.md
+- **"I need design specs"** → Read DESIGN_SYSTEM.md and branding-philosophy.md
 - **"I want to understand the product"** → Read branding-philosophy.md and PROJECT_OVERVIEW.md
 
 ---

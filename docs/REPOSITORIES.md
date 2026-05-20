@@ -15,21 +15,11 @@ All breakDown repositories with their status and purpose.
 | **[authentication](https://github.com/YOUR-ORG/authentication)** | Auth service orchestration layer | 🚀 Pending | Java 21 (library) |
 | **[iam-operations](https://github.com/YOUR-ORG/iam-operations)** | IAM infrastructure (MongoDB + Kratos) | 🚀 Pending | Java 21, MongoDB, Ory Kratos |
 
-## Frontend & Mobile
-
-| Repository | Purpose | Status | Tech |
-|---|---|---|---|
-| **[breakdown-web](https://github.com/YOUR-ORG/breakdown-web)** | Web & PWA frontend | 🚀 Pending | React/Vue 18+, TypeScript 5, Tailwind |
-| **[breakdown-ios](https://github.com/YOUR-ORG/breakdown-ios)** | iOS native app | 🚀 Pending | Swift, SwiftUI, iOS 14+ |
-| **[breakdown-android](https://github.com/YOUR-ORG/breakdown-android)** | Android native app | 🚀 Pending | Kotlin, Jetpack Compose, Android 10+ |
-
-## Documentation & Config
+## Documentation
 
 | Repository | Purpose | Status |
 |---|---|---|
 | **[breakdown-project](https://github.com/YOUR-ORG/breakdown-project)** | Project overview & documentation | ✅ Active |
-| **[breakdown-docker](https://github.com/YOUR-ORG/breakdown-docker)** | Docker & Kubernetes configs | 🚀 Planned |
-| **[breakdown-api-docs](https://github.com/YOUR-ORG/breakdown-api-docs)** | OpenAPI/Swagger specifications | 🚀 Planned |
 
 ---
 
@@ -47,15 +37,6 @@ git clone https://github.com/YOUR-ORG/breakdown-dashboard-svc.git
 git clone https://github.com/YOUR-ORG/iam-operations.git
 git clone https://github.com/YOUR-ORG/authentication.git
 git clone https://github.com/YOUR-ORG/authentication-svc.git
-```
-
-### Clone All Frontend/Mobile Repos
-```bash
-#!/bin/bash
-cd ~/projects
-git clone https://github.com/YOUR-ORG/breakdown-web.git
-git clone https://github.com/YOUR-ORG/breakdown-ios.git
-git clone https://github.com/YOUR-ORG/breakdown-android.git
 ```
 
 ---
