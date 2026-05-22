@@ -21,11 +21,12 @@
 
 ## 📊 Project Status
 
-| Phase | Status | Timeline | Deliverables |
-|-------|--------|----------|--------------|
-| **1: Architecture & Design** | ✅ Complete | Apr — May 2026 | Architecture docs, User stories (10), UX specs, Design system |
-| **2: Implementation** | 🔄 In Progress | Jun — Sep 2026 | Backend services, Testing |
-| **3: Frontend & Launch** | 🚀 Planned | Oct 2026+ | Web/PWA, iOS, Android, Production deployment |
+| Area | Status |
+|------|--------|
+| **Architecture & Design** | ✅ Complete |
+| **Backend Development** | 🔄 In Progress |
+| **Frontend Development** | 🚀 Planned |
+| **LLM Chatbot Integration** | 🚀 Planned |
 
 ---
 
