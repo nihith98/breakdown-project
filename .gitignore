@@ -41,3 +41,5 @@ temp/
 # Package managers
 package-lock.json
 yarn.lock
+breakDown-ui/.claude/settings.local.json
+.gitignore
