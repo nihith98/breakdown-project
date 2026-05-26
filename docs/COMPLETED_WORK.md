@@ -224,18 +224,83 @@ All deliverables meet or exceed requirements. Phase 2 (Implementation) can begin
 
 ---
 
-## 📈 Next Steps (Phase 2)
+---
 
+# Phase 2 Progress — Frontend Implementation
+
+**Status**: 🔄 In Progress  
+**Start Date**: May 27, 2026  
+**Framework**: Next.js 15 with React 19 and TypeScript
+
+## ✅ Frontend Framework & Tooling
+
+### Framework Selection: Next.js 15
+- **Next.js 15**: Server components, server actions, API routes, incremental static regeneration
+- **React 19**: Latest hooks, concurrent features, component APIs
+- **TypeScript**: Full type safety (`strict: true`), no implicit `any`
+- **CSS Modules**: Component-scoped styling with design token integration
+- **Testing**: Jest + React Testing Library (component, server action, API route tests)
+
+### Design System Implementation
+- **breakDown Design Tokens** integrated via CSS custom properties
+- **Theme Support**: Dark (default) and Light modes with localStorage persistence
+- **Typography**: JetBrains Mono (monospace) + Space Grotesk (sans-serif) via local @font-face
+- **Color Palette**: Privacy-first visual direction with syntax-highlight accents
+- **Responsive Design**: Mobile-first with breakpoints at 768px (tablet) and 1024px (desktop)
+
+### Target Devices & Platforms
+- ✅ **Web** (responsive, primary platform — in development)
+- ✅ **PWA** (installable, offline-capable — framework support ready)
+- 🎯 **iOS** (SwiftUI, safe areas, Keychain integration — Phase 3)
+- 🎯 **Android** (Jetpack Compose, Material Design — Phase 3)
+
+## ✅ Authentication Pages
+
+### Login Page (`app/(auth)/login/page.tsx`)
+**Status**: ✅ Complete  
+**Commit**: 37e4486 "feat: complete login page redesign with breakdown design system"  
+**Components**:
+- Hero section: Logo (breakDown wordmark), tagline, privacy promise footer
+- Form panel: Username field, password field with visibility toggle, login button
+- Status bar: Page-level footer showing `v0.1.0 · username only`
+- Error handling: API error banner at form top
+- Loading state: Button disabled with spinner during submission
+- Theme persistence: Pre-mount script prevents flash-of-wrong-theme
+
+**Design Tokens Used**:
+- `--bg-page`, `--surface-card`, `--surface-card-lavender` (hero card background)
+- `--accent-highlight` (Down in wordmark, function yellow)
+- `--money-positive` (status bar version label)
+- `--font-mono` (status bar, privacy footer)
+- `--transition-fast`, `--transition-med` (hover/focus states)
+
+**Responsive Layouts**:
+- Desktop (1024px+): Hero (40%) + Form (60%) side-by-side
+- Tablet (768px–1023px): Stacked, centered, full-width form
+- Mobile (<768px): Full-width stacked, condensed padding
+
+**Accessibility**: WCAG AA compliant, keyboard navigation, screen reader support
+
+### Registration Page
+**Status**: 🎯 Planned  
+**Scope**: Same layout/theme as login page with additional password confirmation field
+
+## 🔄 Phase 2 — Next Steps
+
+- [x] Frontend framework (Next.js 15) setup and configuration
+- [x] Design system integration (CSS tokens, theme support)
+- [x] Login page implementation with breakdown design
+- [ ] Registration page implementation
+- [ ] Dashboard layout and group pages
 - [ ] Backend service implementation (Expense + Auth systems)
-- [ ] Integration testing
+- [ ] Integration testing (frontend ↔ backend)
 - [ ] Performance optimization
-- [ ] Production deployment
-- [ ] Frontend development (Web/PWA, iOS, Android) — Phase 3
+- [ ] Production deployment to Vercel / AWS / GCP
 
-**Estimated Timeline**: June — September 2026 (backend); October 2026+ (frontend & launch)
+**Current Timeline**: May 2026 (frontend auth pages); June–August 2026 (backend services); September 2026+ (feature implementation & launch)
 
 ---
 
-**Completed**: May 20, 2026  
-**Phase**: 1 — Architecture & Design ✅  
-**Next**: Phase 2 — Implementation 🔄
+**Phase 1 Completed**: May 20, 2026  
+**Phase 2 Started**: May 27, 2026  
+**Phase**: 2 — Implementation 🔄
